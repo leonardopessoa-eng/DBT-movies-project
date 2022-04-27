@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: movies
+    database: dbt-projeto2
+    schema: filmes_projeto
+    tables: 
+      - name: filmes
+

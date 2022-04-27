@@ -1,0 +1,34 @@
+
+version: 2
+
+models:
+  - name: stg_filter_table
+    description: Table with not null relelevant column
+    column:
+      - name: int64_field_0
+        tests:
+          - unique
+          - not_null
+      - name: Title
+        tests: 
+          - not_null 
+  - name: stg_action_movies
+    description: Table with movies that contains action category
+    column:
+      - name: int64_field_0
+        tests:
+          - unique
+          - not_null
+      - name: Title
+        tests: 
+          - not_null
+  - name: stg_drama_movies
+    description: Table with movies that contains drama category
+    column:
+      - name: int64_field_0
+        tests:
+          - unique
+          - not_null
+      - name: Title
+        tests: 
+          - not_null        

@@ -23,9 +23,21 @@ quantity_rejection_approval as (
     from best_action_and_drama
     order by approval_votes desc, Year desc, Title asc
 
+),
+
+quantity_rejection_approval_filter as (
+
+    select
+        Title,
+        Year,
+        Genre,
+        approval_votes,
+        rejection_votes
+    from quantity_rejection_approval
+    
 )
 
 select 
     * 
-from quantity_rejection_approval 
+from quantity_rejection_approval_filter 
 

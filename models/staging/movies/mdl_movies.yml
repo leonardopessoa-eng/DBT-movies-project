@@ -11,7 +11,8 @@ models:
           - not_null
       - name: Title
         tests: 
-          - not_null 
+          - not_null
+
   - name: stg_action_movies
     description: Table with movies that contains action category
     column:
@@ -22,6 +23,7 @@ models:
       - name: Title
         tests: 
           - not_null
+
   - name: stg_drama_movies
     description: Table with movies that contains drama category
     column:
@@ -31,4 +33,10 @@ models:
           - not_null
       - name: Title
         tests: 
-          - not_null        
+          - not_null
+          
+  - name: stg_genre_organized
+    description: Table with only one combination of genre and your respective quantity.
+
+  - name: stg_genre_individual
+    description: Table with one different genre for column.              

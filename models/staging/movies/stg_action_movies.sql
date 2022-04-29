@@ -8,9 +8,7 @@ select
     Writer,
     Actors,
     imdbRating,
-    imdbVotes,
-    Season,
-    Episode
+    imdbVotes
 from {{ ref('stg_filter_table') }}
 where Genre like '%Action%'
       and

@@ -12,6 +12,7 @@ with organized as (
 genre_quantity as (
 
     select
+    
         Genre,
         {% for genres in all_genres -%}
         (case when Genre like '%{{ genres }}%' then 1*Quantity else 0 end) as {{ genres }}_Quantity

@@ -37,11 +37,9 @@ models:
       +materialized: table
     
     staging:
-      A&R:
+      movies:
         +materialized: table
-      
-      Genre_Analysis:  
-        +materialized: table
+
 
 
 

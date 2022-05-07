@@ -33,4 +33,4 @@ genre_quantity_final as (
 
 )
 
-select * from genre_quantity_final
+select * from organized
